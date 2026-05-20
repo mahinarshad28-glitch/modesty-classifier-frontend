@@ -675,7 +675,7 @@
 
       <div class="api-input-wrap">
         <span class="api-input-label">API URL</span>
-        <input class="api-input" id="api-url" type="text" value="http://localhost:8000/analyze" placeholder="http://localhost:8000/analyze" />
+        <input class="api-input" id="api-url" type="text" value="https://mahink-modestyclassifier.hf.space/analyze" placeholder="https://mahink-modestyclassifier.hf.space/analyze" />
       </div>
 
       <div class="upload-zone" id="upload-zone">
@@ -945,7 +945,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 analyzeBtn.addEventListener('click', async () => {
   if (!selectedFile) return;
 
-  const apiUrl = document.getElementById('api-url').value.trim() || 'http://localhost:8000/analyze';
+  const apiUrl = document.getElementById('api-url').value.trim() || 'https://mahink-modestyclassifier.hf.space/analyze';
 
   analyzeBtn.classList.add('loading');
   analyzeBtn.disabled = true;
